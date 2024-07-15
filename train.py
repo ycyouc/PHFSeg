@@ -383,7 +383,7 @@ if __name__ == '__main__':
     parser.add_argument('--classes', type=int, default=2, help='No. of classes in the dataset')
     parser.add_argument('--ignore_label', type=int, default=255, help = "ignored label")
     parser.add_argument('--model_name', default='PHFSeg', help='Model name')
-    parser.add_argument('--data_name', default='CT100', help='Model name')
+    parser.add_argument('--data_name', default='CT100', help='dataset name, CT100 or P20')
     parser.add_argument('--gpu', default=True, type=lambda x: (str(x).lower() == 'true'),
                         help='Run on CPU or GPU. If TRUE, then GPU.')
 
