@@ -126,7 +126,7 @@ if __name__ == '__main__':
     parser.add_argument('--height', type=int, default=512, help='Height of RGB image')
     parser.add_argument('--savedir', default='./outputs', help='directory to save the results')
     parser.add_argument('--model_name', default='PHFSeg', help='Model name')
-    parser.add_argument('--data_name', default='CT100', help='Model name')
+    parser.add_argument('--data_name', default='CT100', help='dataset name, CT100 or P20')
     parser.add_argument('--gpu', default=True, type=lambda x: (str(x).lower() == 'true'),
                         help='Run on CPU or GPU. If TRUE, then GPU')
     parser.add_argument('--pretrained', default='./results_PHFSeg_crossVal_mod100/', help='Pretrained model')
