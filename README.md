@@ -11,12 +11,13 @@ Before running the code, you should first put the images, masks, and data lists 
 ```
 .
 ├── PHFSeg
-│   ├── cg_detr
+│   ├── module
 │   └── datasets
 │   └── results
-│   └── run_on_video
-│   └── standalone_eval
-│   └── utils
+│   └── PHFSeg.py
+│   └── train.py
+│   └── test.py
+│   └── ...
 ```
 
-For convenience, we provide our data on [Google Drive](). Please download it and unzip it into the `$ROOT_DIR` directory.
+For convenience, we provide our data on [Google Drive](https://drive.google.com/file/d/1EScMnIZTOwpPROC7dl6Z3q-83zJm5pwb/view?usp=sharing). Please download it and unzip it into the `$ROOT_DIR` directory.
