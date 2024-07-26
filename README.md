@@ -7,3 +7,16 @@ In the field of automatic segmentation of lung CT images, deep learning-based me
 ## Training and Testing
 We use Python 3.9, PyTorch 1.13.1 to test the code. The `train.py` script is for training, and the `test.py` script is for testing.
 
+Before running the code, you should first put the images, masks, and data lists into the `datasets` folder. The file structure is as follows:
+```
+.
+├── PHFSeg
+│   ├── cg_detr
+│   └── datasets
+│   └── results
+│   └── run_on_video
+│   └── standalone_eval
+│   └── utils
+```
+
+For convenience, we provide our data on [Google Drive](). Please download it and unzip it into the `$ROOT_DIR` directory.
