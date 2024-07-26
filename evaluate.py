@@ -53,7 +53,7 @@ def main():
     avgHD = 0
     avgPRE = 0
     data_root = './datasets'
-    data_name = 'CT100'
+    data_name = 'P20'
     model_name = 'PHFSeg'
     print(model_name, data_name)
 
