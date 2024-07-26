@@ -21,3 +21,15 @@ Before running the code, you should first put the images, masks, and data lists 
 ```
 
 For convenience, we provide our data on [Google Drive](https://drive.google.com/file/d/1EScMnIZTOwpPROC7dl6Z3q-83zJm5pwb/view?usp=sharing). Please download it and unzip it into the `$ROOT_DIR` directory.
+
+### Training PHFSeg
+```
+python train.py --max_epochs 100 --batch_size 16 --lr 1e-3 --lr_mode poly --savedir ./results_PHFSeg_crossVal --model_name PHFSeg --data_name P20
+```
+### Testing PHFSeg
+For example, we use the following command to test PHFSeg on the COVID-19-P20 dataset:
+```
+python test.py --model_name PHFSeg --data_name P20 --pretrained Pretrained/COVID-19-P20/<MODEL_NAME> --savedir ./outputs
+```
+The generated segmentation maps of five folds will be outputted into the folder of `$ROOT_DIR/outputs/P20/PHFSeg/crossVal0~crossVal4`, respectively.
+
